@@ -1,0 +1,32 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    background-color: brown;
+}
+
+.grid-container > *{
+    border: 10px;
+    margin: 10px;
+    background-color: rgb(177, 252, 252);
+}
+
+h2{
+    font-weight: bold;
+}
+
+@media (max-width: 1190px){
+    span{
+        display: none;
+    }
+}
+
+@media (min-width: 1191px){
+    span{
+        position: relative;
+        font-size: large;
+        font-weight: bold;
+        top: 60px;
+        margin: 100px;
+    }
+}

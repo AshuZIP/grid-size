@@ -1,0 +1,34 @@
+.grid-container{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px;
+    background-color: brown;
+}
+
+.grid-container > *{
+    border: 10px;
+    margin: 10px;
+    background-color: rgb(177, 252, 252);
+    border-color: black;
+}
+
+h2{
+    font-weight: bold;
+}
+
+@media (max-width: 1190px){
+    span{
+        display: none;
+    }
+}
+
+@media (min-width: 1191px){
+    span{
+        position: relative;
+        font-size: large;
+        font-weight: bold;
+        top: 60px;
+        margin: 100px;
+    }
+}
